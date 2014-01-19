@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sitemesh>
+
+	<mapping decorator="/WEB-INF/decorators/defaultBootstrapDecorator.jsp"/>
+
+	
+	<mapping>
+		<path>*/home</path>
+		<!--
+		<decorator>/WEB-INF/decorators/footerIndexDecorator.jsp</decorator>
+		<decorator>/WEB-INF/decorators/menuPrincipalDecorator.jsp</decorator>
+		-->	
+		<decorator>/WEB-INF/decorators/defaultBootstrapDecorator.jsp</decorator>			
+	</mapping>
+	
+	 
+	<mapping>
+		<path>/*</path>
+		<decorator>/WEB-INF/decorators/footerIndexDecorator.jsp</decorator>
+		<decorator>/WEB-INF/decorators/defaultBootstrapDecorator.jsp</decorator>
+	</mapping>
+
+</sitemesh>
